@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
       --ink: #102a43;
@@ -30,7 +31,8 @@
     }
 
     html {
-      scroll-behavior: smooth
+      scroll-behavior: smooth;
+      font-size: 16px
     }
 
     body {
@@ -38,7 +40,8 @@
       background: var(--cream);
       color: var(--ink);
       font-family: "Noto Kufi Arabic", Arial, sans-serif;
-      line-height: 1.8
+      line-height: 1.8;
+      font-size: 1rem
     }
 
     a {
@@ -75,13 +78,13 @@
     .nav-links {
       display: flex;
       gap: 26px;
-      font-size: 13px;
+      font-size: 0.9375rem;
       color: var(--muted)
     }
 
     .lang {
       font-family: "DM Sans", sans-serif;
-      font-size: 12px;
+      font-size: 0.875rem;
       border: 1px solid var(--line);
       padding: 5px 11px;
       border-radius: 99px;
@@ -136,7 +139,7 @@
       gap: 8px;
       color: var(--blue);
       font-family: "DM Sans", sans-serif;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 700;
       letter-spacing: .7px;
       text-transform: uppercase
@@ -158,7 +161,7 @@
     }
 
     .hero p {
-      font-size: 16px;
+      font-size: 1rem;
       color: var(--muted);
       max-width: 600px;
       margin: 0 0 28px
@@ -176,7 +179,7 @@
       gap: 9px;
       border-radius: 9px;
       padding: 12px 20px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 700;
       transition: .2s
     }
@@ -212,14 +215,14 @@
     }
 
     .trust-text {
-      font-size: 13px
+      font-size: 0.9375rem
     }
 
     .trust-items {
       display: flex;
       gap: 24px;
       font-family: "DM Sans", sans-serif;
-      font-size: 12px;
+      font-size: 0.875rem;
       color: #a6c8ce
     }
 
@@ -242,20 +245,20 @@
       font-family: "DM Sans", sans-serif;
       color: var(--blue);
       font-weight: 700;
-      font-size: 12px;
+      font-size: 0.875rem;
       letter-spacing: 1px;
       text-transform: uppercase
     }
 
     .section-top h2 {
-      font-size: 30px;
+      font-size: 1.875rem;
       line-height: 1.6;
       margin: 7px 0;
       color: var(--ink)
     }
 
     .section-top p {
-      font-size: 14px;
+      font-size: 0.9375rem;
       color: var(--muted);
       margin: 0
     }
@@ -292,16 +295,16 @@
       border-radius: 12px;
       background: var(--sky);
       color: var(--blue);
-      font: 700 20px "DM Sans", sans-serif
+      font: 700 1.25rem "DM Sans", sans-serif
     }
 
     .card h3 {
-      font-size: 17px;
+      font-size: 1.0625rem;
       margin: 15px 0 7px
     }
 
     .card p {
-      font-size: 13px;
+      font-size: 0.875rem;
       color: var(--muted);
       margin: 0
     }
@@ -316,7 +319,7 @@
     .statement {
       border-right: 4px solid var(--teal);
       padding: 4px 24px 4px 0;
-      font-size: 19px;
+      font-size: 1.1875rem;
       line-height: 2;
       color: var(--ink)
     }
@@ -331,26 +334,40 @@
       padding: 18px;
       background: #fff;
       border-radius: 12px;
-      border: 1px solid #e1ebeb
+      border: 1px solid #e1ebeb;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      min-height: 120px
     }
 
     .detail small {
       display: block;
       color: var(--muted);
       font-family: "DM Sans", sans-serif;
-      font-size: 11px;
+      font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: .6px
     }
 
     .detail b {
       font-family: "DM Sans", sans-serif;
-      font-size: 14px;
+      font-size: 1.125rem;
       direction: ltr;
-      display: block;
-      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       color: var(--blue);
-      margin-top: 4px
+      margin: 0
+    }
+
+    .detail-icon {
+      font-size: 1.5rem;
+      color: var(--teal)
     }
 
     .contact {
@@ -372,13 +389,13 @@
 
     .contact h2 {
       margin: 0 0 7px;
-      font-size: 30px
+      font-size: 1.875rem
     }
 
     .contact p {
       margin: 0;
       color: #cbeceb;
-      font-size: 14px
+      font-size: 0.9375rem
     }
 
     .contact .btn-primary {
@@ -395,7 +412,7 @@
 
     .contact-links a {
       font-family: "DM Sans", sans-serif;
-      font-size: 11px;
+      font-size: 0.8125rem;
       color: #d0f4f1;
       text-decoration: underline;
       text-underline-offset: 4px
@@ -406,7 +423,7 @@
       color: #b2cbd0;
       padding: 26px 0;
       font-family: "DM Sans", sans-serif;
-      font-size: 11px
+      font-size: 0.8125rem
     }
 
     .foot {
@@ -418,7 +435,7 @@
 
     .foot strong {
       color: #fff;
-      font-size: 13px
+      font-size: 0.9375rem
     }
 
     @media(max-width:800px) {
@@ -514,7 +531,7 @@
         <div class="section-top">
           <div class="section-tag">أعمالنا</div>
           <h2>حلول عملية لأعمال أكثر انسيابية</h2>
-          <p>من الحسابات اليومية إلى الإدارة الشاملة للموارد، نساعدك على الانتقال من البيانات المبعثرة إلى رؤية واضحة.
+          <p>من الحسابات اليومية إلى الإدارة الشاملة للموارد، نساعدك على الانتقال من البيانات المبعثرة إلى رؤية واضحة
           </p>
         </div>
         <div class="cards">
@@ -540,12 +557,28 @@
       <div class="wrap about-grid">
         <div>
           <div class="section-tag">عن سمافيرس</div>
-          <h2 style="font-size:30px;margin:8px 0 20px">شريكك في التحول الرقمي للأعمال</h2>
+          <h2 style="font-size:1.875rem;margin:8px 0 20px">شريكك في التحول الرقمي للأعمال</h2>
           <p class="statement">سمافيرس للبرمجيات رائدة في تقديم البرامج المحاسبية والمالية وبرامج ERP في السودان.</p>
         </div>
         <div class="details">
-          <div class="detail"><small>الموقع</small><b>عطبرة, السودان</b></div>
-          <div class="detail"><small>التصنيف</small><b>شركة حلول برمجية</b></div>
+          <div class="detail">
+            <small>تابعنا على اليوتيوب</small>
+            <b>
+              <a href="https://www.youtube.com/@samavercesoftware8918" target="_blank" rel="noopener" style="color: inherit; display: flex; align-items: center; gap: 8px;">
+                <span class="detail-icon"><i class="fab fa-youtube"></i></span>
+                YouTube
+              </a>
+            </b>
+          </div>
+          <div class="detail">
+            <small>تابعنا على فيسبوك</small>
+            <b>
+              <a href="https://www.facebook.com/samaverce/" target="_blank" rel="noopener" style="color: inherit; display: flex; align-items: center; gap: 8px;">
+                <span class="detail-icon"><i class="fab fa-facebook"></i></span>
+                Facebook
+              </a>
+            </b>
+          </div>
           <div class="detail"><small>البريد الإلكتروني</small><b>Info@samaverce.com</b></div>
           <div class="detail"><small>الهاتف</small><b>+249122312090 +249912962727</b></div>
         </div>

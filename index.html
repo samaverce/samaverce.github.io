@@ -362,7 +362,9 @@
       justify-content: center;
       gap: 10px;
       color: var(--blue);
-      margin: 0
+      margin: 0;
+      unicode-bidi: embed;
+      flex-wrap: wrap;
     }
 
     .detail-icon {
@@ -407,7 +409,9 @@
     .contact-links {
       display: flex;
       gap: 9px;
-      margin-top: 17px
+      margin-top: 17px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     .contact-links a {
@@ -415,7 +419,9 @@
       font-size: 0.8125rem;
       color: #d0f4f1;
       text-decoration: underline;
-      text-underline-offset: 4px
+      text-underline-offset: 4px;
+      direction: ltr;
+      unicode-bidi: embed;
     }
 
     footer {
@@ -494,6 +500,10 @@
 
       .nav {
         height: 72px
+      }
+
+      .contact-links {
+        justify-content: flex-start;
       }
     }
   </style>
@@ -580,7 +590,14 @@
             </b>
           </div>
           <div class="detail"><small>البريد الإلكتروني</small><b>Info@samaverce.com</b></div>
-          <div class="detail"><small>الهاتف</small><b>+249122312090 +249912962727</b></div>
+          <div class="detail">
+            <small>الهاتف</small>
+            <b>
+              <span dir="ltr">+249912962727</span>
+              <br>
+              <span dir="ltr">+249122312090</span>
+            </b>
+          </div>
         </div>
       </div>
     </section>
